@@ -1,0 +1,543 @@
+@charset "utf-8";
+
+/***** RESET *****/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+menu {
+	display: block
+}
+
+/***** RESET *****/
+/* vietnamese */
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v17/QldKNThLqRwH-OJ1UHjlKGlW5qhWxg.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v17/QldKNThLqRwH-OJ1UHjlKGlX5qhWxg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v17/QldKNThLqRwH-OJ1UHjlKGlZ5qg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*.new{width:100%;height: 800px}*/
+.hamsi {
+	background-color: #7B7474;
+	width: 100%;
+	height: 100%
+}
+
+.ust {
+	width: 100%;
+	height: 45px;
+	background: #000;
+}
+
+#cofemenu {
+	margin: 0;
+	padding: 0
+}
+
+#cofemenu li {
+	list-style: none;
+	display: inline-block;
+}
+
+#cofemenu li a {
+	text-decoration: none;
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: sans-serif;
+	display: block;
+	overflow: hidden;
+	transition: 0.7s all;
+	padding: 14px 30px;
+	text-transform: uppercase;
+}
+
+#cofemenu li a::before {
+	content: '';
+	width: 50px;
+	position: absolute;
+	border-bottom: 2px solid #ffffff;
+	bottom: 0;
+	right: 350px;
+	transition: 0.7s all;
+}
+
+#cofemenu li a:hover::before {
+	right: 0;
+	opacity: 0.5;
+}
+
+
+.orta1 {
+	width: 100%;
+	height: 270px;
+	background: #fff;
+	padding: 120px 0 100px 0;
+}
+
+.ortajpeg {
+	width: 100%;
+	height: 460px;
+	background: url("img/pixel.jpeg")center no-repeat;
+	margin: -120px auto;
+	background-size: 100% 100%;
+}
+
+.yazi {
+	font-family: Inconsolata;
+	width: 200px;
+	height: 200px;
+	font-size: 90px;
+	color: #fff;
+	margin: 0 0 0 710px;
+	padding-top: 100px
+}
+
+#yaz1 {
+	margin: 2.5px 0 0 -18px
+}
+
+.yazi2 {
+	width: 180px;
+	height: 20px;
+	background: #000;
+	color: #fff;
+	padding: 2.5px 0 0 20px;
+	margin: 120px 100px 0 30px;
+	/*font-family:inconsolata*/
+}
+
+.yazi3 {
+	width: 160px;
+	height: 25px;
+	color: #fff;
+	margin: -20px 100px 0 1360px;
+	padding: 2.5px 40px 0 10px;
+	font-size: 17px;
+}
+
+.orta2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 700px;
+	margin: 0 0 0 440px;
+	text-align: center;
+}
+
+.ortayaz {
+	height: 28px;
+	font-family: complex regular;
+	font-size: 25px;
+	background: #000;
+	;
+	color: #fff;
+	text-align: center;
+
+}
+
+.yaz0 {
+	line-height: 25px;
+	text-align: justify;
+	padding: 20px 10px 0 20px;
+	float: left;
+	font-family: Inconsolata;
+}
+
+.yaz {
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0.01em 12px;
+	border-left: 6px solid #ccc;
+	background-color: #f1f1f1;
+	float: left;
+	text-align: justify;
+	font-family: Inconsolata;
+}
+
+.boldyazi {
+	font: 20px bold;
+	float: left;
+	text-align: justify;
+	font-family: inconsolata;
+}
+
+.bold {
+	font-weight: bold
+}
+
+.orta3 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 100px;
+	margin: 350px 0 0 450px;
+	text-align: center;
+}
+
+.themenu {
+	height: 28px;
+	font-family: complex regular;
+	font-size: 25px;
+	background: #000;
+	;
+	color: #fff;
+	text-align: center
+}
+
+.orta4 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 600px;
+	margin: 8px 0 0 450px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+
+	/*border:0.5px solid;color:#000*/
+}
+
+
+.event {
+	color: #000;
+	font-size: 25px;
+	font-family: inconsolata;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 15px 150px;
+	transition: 0.3s;
+	-webkit-box-shadow: 0 0 4px 2px #919191;
+	-moz-box-shadow: 0 0 4px 2px #919191;
+	box-shadow: 0 0 4px 2px #919191;
+}
+
+.active,
+.event:hover {
+	background-color: #2E2D2D;
+	color: #fff;
+}
+
+.eatmenu {
+	width: 700px;
+	height: 560px;
+	margin: -520px 0 0 451px;
+
+	/*border-top:1px solid #616161;*/
+
+}
+
+.shadow {
+	/*-moz-box-shadow: 4px 4px 8px #e2e2e2;
+-webkit-box-shadow: 4px 4px 8px #e2e2e2;
+box-shadow: 4px 4px 8px #e2e2e2;*/
+	-webkit-box-shadow: 0 0 4px 2px #919191;
+	-moz-box-shadow: 0 0 4px 2px #919191;
+	box-shadow: 0 0 4px 2px #919191;
+}
+
+.greyfont {
+	font-size: 19px;
+	color: #979797;
+	font-family: inconsolata;
+	margin: 14px 0 22px 32px
+}
+
+h5 {
+	font-size: 18px;
+	margin: 20px 0 0 20px
+}
+
+.drinkmenu {
+	width: 700px;
+	height: 560px;
+	margin: -520px 0 0 450px;
+	/*border-top:1px solid #616161;*/
+}
+
+.orta5 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 440px;
+	margin: 10px 0 40px 450px;
+}
+
+.orta5jpeg {
+	width: 700;
+	height: 500px;
+	background: url("img/coffeehouse2.jpg")center no-repeat;
+	margin: 40px 0
+}
+
+.orta6 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: auto;
+	margin: 120px 0 0 450px
+}
+
+.where {
+
+	margin: 0 0 15px 0;
+	width: 300px;
+	height: 25px;
+	font-family: complex regular;
+	font-size: 25px;
+	background: #000;
+	;
+	color: #fff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.findplace {
+	width: 450px;
+	height: 25px;
+	font-family: inconsolata;
+	font-size: 20px;
+	margin: 50px 0 0 0
+}
+
+.orta6jpg {
+	max-width: 100%;
+	height: 100%;
+	margin: 20px 0 20px 0
+}
+
+.weoffer {
+	width: 700px;
+	height: 65px;
+	font-family: inconsolata;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 20px;
+	margin: 0 0 -450px 0;
+	padding: 0 0 0 0
+}
+
+.fyi {
+	padding: 0 10px 0 10px;
+	background: #000;
+	color: #fff;
+	font-size: 22px
+}
+
+.weoffer1 {
+	width: 700px;
+	height: 25px;
+	font-family: inconsolata;
+	font-size: 18px;
+}
+
+.orta7 {
+	width: 700px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 480px 0 0 450px
+}
+
+.forumreserv {
+	font-size: 15px;
+	height: 20px;
+	width: 100%;
+	margin: 0 20px 0 0;
+	padding: 10px;
+	display: block;
+	border: none;
+	border-bottom: 1.5px solid #000;
+	padding-top: 27px !important;
+	padding-bottom: 27px !important;
+	border: 1px solid #B8B8B8 !important;
+	background-color: #CCc
+}
+
+.forumreserv:disabled {
+	cursor: not-allowed;
+	opacity: 0.3
+}
+
+placeholder {
+	padding: 20px 0
+}
+
+.buton {
+	color: #fff;
+	background-color: #000;
+	font-size: 15px;
+	font-family: complex regular;
+	margin: auto;
+	padding: 8px 8px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.buton:hover {
+	color: #000;
+	background-color: #ccc
+}
+
+.alt {
+	border-top: 1px solid rgb(97, 94, 94);
+	width: 700px;
+	height: 80px;
+	margin: 80px 0 0 450px;
+	text-align: center;
+}
+
+.alt img {
+	width: 15px;
+	height: 15px;
+	margin-top: 7px;
+	margin-bottom: -2px
+}
+
+.alt0 {
+	;
+	margin: 10px 0 0 0;
+	font-family: verdana;
+	font-size: 15px
+}
+
+.altins {
+	text-decoration: none;
+	color: #121111;
+
+}
+
+.page-menu [href^="orta2"] {}
